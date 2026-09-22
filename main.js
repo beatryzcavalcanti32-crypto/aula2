@@ -1,9 +1,8 @@
-
+/*MODELO 1: FUNÇÕES
 var a = 5
 var b = 7
 var c = a+b
-console.log(c) 
-
+}
 
 /*MODELO 2: FUNÇÕES
 var a = 3
@@ -28,3 +27,18 @@ function somar (x,y){
 }
 
 FIM MODELO 3*/
+
+
+const f = document.getElementById("formulario")
+
+f.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const v1 = Number(document.getElementById("num1").value)
+    const v2 = Number(document.getElementById("num2").value)
+
+    const soma = v1+v2
+
+    document.getElementById("resultado").textContent=soma
+
+})
